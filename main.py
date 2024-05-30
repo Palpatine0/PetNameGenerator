@@ -21,4 +21,4 @@ if user_animal_type == "Hamster":
 # Displays the generated response (suggested pet names) in the main area of the Streamlit app.
 if pet_color:
     response= lch.generate_pet_name(user_animal_type, pet_color)
-    st.text(response)
+    st.text(response['pet_name'])

@@ -19,7 +19,7 @@ def generate_pet_name(animal_type,pet_color):
     )
 
     # Creates an LLMChain instance that links the language model and the prompt template.
-    name_chain = LLMChain(llm = llm_OpenAI, prompt = prompt_template_name)
+    name_chain = LLMChain(llm = llm_OpenAI, prompt = prompt_template_name,output_key="pet_name")
 
     # Generates a response from the language model by passing the animal_type to the prompt template through the LLMChain.
     response = name_chain({'animal_type': animal_type,'pet_color': pet_color})
