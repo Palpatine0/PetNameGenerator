@@ -1,6 +1,5 @@
 # created by virtualenv automatically
-
 .idea
-tutorial.md
 .env
+/tutorial/
 .DS_Store
